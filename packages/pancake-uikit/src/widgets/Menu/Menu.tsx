@@ -8,12 +8,13 @@ import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
-import { HomeIcon, TradeIcon, FarmIcon, PoolIcon, InfoIcon, MoreIcon, TwitterIcon, TelegramIcon, TicketIcon } from "./icons";
+import { HomeIcon, TradeIcon, FarmIcon, PoolIcon, InfoIcon, MoreIcon, TwitterIcon, TelegramIcon, TicketIcon, SunIcon } from "./icons";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import Text from "../../components/Text/Text";
 import Skeleton from "../../components/Skeleton/Skeleton";
+import { LogoIcon } from "../../components/Svg";
 
 const Ul = styled.ul`
   list-style: none;
@@ -171,7 +172,7 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
-        {/* <Ul>
+        <Ul>
           <li>
             <a href="/">
               <HomeIcon width="24px" mr="8px" />
@@ -208,6 +209,12 @@ const Menu: React.FC<NavProps> = ({
             </a>
           </li>
           <li>
+            <a href="/referrals">
+              <SunIcon width="24px" mr="8px" />
+              Referrals
+            </a>
+          </li>
+          {/* <li>
             <a href="/lotteries">
               <TicketIcon width="24px" mr="8px" />
               Lotteries
@@ -218,7 +225,7 @@ const Menu: React.FC<NavProps> = ({
               <InfoIcon width="24px" mr="8px" />
               Info
             </a>
-          </li>
+          </li> */}
           <li>
             <Dropdown
               target={
@@ -234,9 +241,9 @@ const Menu: React.FC<NavProps> = ({
               <a target="_blank" rel="noreferrer" href="https://docs.swiftfinance.farm/">
                 Docs
               </a>
-              <a target="_blank" rel="noreferrer" href="https://governance.swiftfinance.farm/">
+              {/* <a target="_blank" rel="noreferrer" href="https://governance.swiftfinance.farm/">
                 Governance
-              </a>
+              </a> */}
             </Dropdown>
           </li>
           <li className="socialIcons">
@@ -249,13 +256,13 @@ const Menu: React.FC<NavProps> = ({
               <TelegramIcon width="24px" mr="0" />
             </a>
           </li>
-        </Ul> */}
+        </Ul>
         { cakePriceUsd ? (
           <PriceLink
           href="https://www.traderjoexyz.com/#/trade?outputCurrency=0x0Aa4ef05B43700BF4b6E6Dc83eA4e9C2CF6Af0fA"
           target="_blank"
           >
-            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+            <Text color="textSubtle" bold><img width="16" src="https://swiftfinance.farm/images/farms/swift.png" alt="Swift Token"/>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ): 
         <Skeleton width={80} height={24} />
@@ -264,7 +271,7 @@ const Menu: React.FC<NavProps> = ({
         {!!login && !!logout && (
           <Flex>
             <UserBlock account={account} login={login} logout={logout} />
-            {profile && <Avatar profile={profile} />}
+            {/* {profile && <Avatar profile={profile} />} */}
           </Flex>
         )}
       </StyledNav>

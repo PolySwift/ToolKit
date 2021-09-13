@@ -190,14 +190,14 @@ export const socials = [
       },
       {
         label: "Announcements",
-        href: "https://twitter.com/Swift_Finance",
+        href: "https://twitter.com/SwiftFinanceOff",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/Swift_Finance",
+    href: "https://twitter.com/SwiftFinanceOff",
   },
 ];
 

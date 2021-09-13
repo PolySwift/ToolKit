@@ -247,17 +247,17 @@ const Menu: React.FC<NavProps> = ({
             </Dropdown>
           </li>
           <li className="socialIcons">
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/Swift_Finance/">
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/SwiftFinanceOff">
               <TwitterIcon width="24px" mr="0" />
             </a>
           </li>
           <li className="socialIcons">
-            <a target="_blank" rel="noreferrer" href="https://telegram.com/swiftfinanceavax/">
+            <a target="_blank" rel="noreferrer" href="https://t.me/swiftfinanceavax">
               <TelegramIcon width="24px" mr="0" />
             </a>
           </li>
         </Ul>
-        { cakePriceUsd ? (
+        {/* { cakePriceUsd ? (
           <PriceLink
           href="https://www.traderjoexyz.com/#/trade?outputCurrency=0x0Aa4ef05B43700BF4b6E6Dc83eA4e9C2CF6Af0fA"
           target="_blank"
@@ -266,7 +266,7 @@ const Menu: React.FC<NavProps> = ({
           </PriceLink>
         ): 
         <Skeleton width={80} height={24} />
-        }
+        } */}
 
         {!!login && !!logout && (
           <Flex>

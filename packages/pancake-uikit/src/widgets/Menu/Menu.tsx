@@ -8,7 +8,7 @@ import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
-import { HomeIcon, TradeIcon, FarmIcon, PoolIcon, InfoIcon, MoreIcon, TwitterIcon, TelegramIcon, TicketIcon, SunIcon } from "./icons";
+import { HomeIcon, TradeIcon, FarmIcon, PoolIcon, InfoIcon, MoreIcon, TwitterIcon, TelegramIcon, TicketIcon, SunIcon, NomicsIcon } from "./icons";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
@@ -241,9 +241,17 @@ const Menu: React.FC<NavProps> = ({
               <a target="_blank" rel="noreferrer" href="https://docs.swiftfinance.farm/">
                 Docs
               </a>
-              {/* <a target="_blank" rel="noreferrer" href="https://governance.swiftfinance.farm/">
-                Governance
-              </a> */}
+              <a target="_blank" rel="noreferrer" href="https://chartex.pro/?symbol=AVAX_TRADERJOE%3ASWIFT0x21b78f868bc7707C55470D6f7650faE23791F440&interval=60&theme=dark">
+                Charts
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://medium.com/@swiftfinance">
+                Medium
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://nomics.com/assets/SWIFT2-Swift-Finance">
+                <NomicsIcon width="24px" mr="8px" />
+                Nomics
+              </a>
+
             </Dropdown>
           </li>
           <li className="socialIcons">

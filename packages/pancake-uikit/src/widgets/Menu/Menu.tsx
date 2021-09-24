@@ -209,17 +209,23 @@ const Menu: React.FC<NavProps> = ({
             </a>
           </li>
           <li>
-            <a href="/referrals">
-              <SunIcon width="24px" mr="8px" />
-              Referrals
-            </a>
-          </li>
-          {/* <li>
             <a href="/lotteries">
               <TicketIcon width="24px" mr="8px" />
               Lotteries
             </a>
           </li>
+          <li>
+            <a href="/referrals">
+              <SunIcon width="24px" mr="8px" />
+              Referrals
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noreferrer" href="https://snapshot.org/#/swiftfinance.eth">
+              Vote
+            </a>
+          </li>
+          {/* 
           <li>
             <a target="_blank" rel="noreferrer" href="https://polyswift.info/">
               <InfoIcon width="24px" mr="8px" />

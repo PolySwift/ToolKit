@@ -8,7 +8,7 @@ import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
-import { HomeIcon, TradeIcon, FarmIcon, PoolIcon, InfoIcon, MoreIcon, TwitterIcon, TelegramIcon, TicketIcon, SunIcon, NomicsIcon } from "./icons";
+import { HomeIcon, TradeIcon, FarmIcon, PoolIcon, InfoIcon, MoreIcon, TwitterIcon, TelegramIcon, TicketIcon, SunIcon, NomicsIcon, GroupsIcon, TeamBattleIcon} from "./icons";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
@@ -221,9 +221,14 @@ const Menu: React.FC<NavProps> = ({
             </a>
           </li>
           <li>
+            <GroupsIcon width="24px" mr="8px" />
+
             <a target="_blank" rel="noreferrer" href="https://snapshot.org/#/swiftfinance.eth">
               Vote
             </a>
+
+            
+
           </li>
           {/* 
           <li>
